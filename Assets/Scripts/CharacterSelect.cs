@@ -8,9 +8,10 @@ using UnityEngine;
         [SerializeField] private GameObject characterSelectDisplay = default;
         [SerializeField] private Transform characterPreviewParent = default;
         [SerializeField] private TMP_Text characterNameText = default;
-        [SerializeField] private float turnSpeed = 90f;
+    [SerializeField] private TextMeshProUGUI characterNick = default;
+    [SerializeField] private float turnSpeed = 90f;
         [SerializeField] private Character[] characters = default;
-        public static string nickname = MyNetworkPlayer.nickName;
+        //public static string nickname = MyNetworkPlayer.nickName;
 
     private int currentCharacterIndex = 0;
         private List<GameObject> characterInstances = new List<GameObject>();
@@ -31,7 +32,7 @@ using UnityEngine;
             }
 
             characterInstances[currentCharacterIndex].SetActive(true);
-            characterNameText.text = nickname;//characters[currentCharacterIndex].CharacterName;
+           // characterNameText.text = nickname;//characters[currentCharacterIndex].CharacterName;
 
             
 
@@ -67,10 +68,11 @@ using UnityEngine;
         print(GetInfo.nickname);
         NetworkServer.Spawn(characterInstance, sender);
         var connectedPlayer = characterInstance.GetComponent<MyNetworkPlayer>();
-        connectedPlayer.displayName= GetInfo.nickname;
-        connectedPlayer.SetDisplayName(GetInfo.nickname);
-        
-        }
+        //connectedPlayer.displayName = characterNick.text;
+        connectedPlayer.SetDisplayName(characterNick.text);
+        //connectedPlayer.displayName = characterNick.text;
+
+    }
 
         public void Right()
         {

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6004918c96d77124585d86807455e8ca, type: 3}
+  m_Name: Character8
+  m_EditorClassIdentifier: 
+  characterName: Character8
+  characterPreviewPrefab: {fileID: 8255749633340222671, guid: e024e2a1aa462d8449cc038330dde06a, type: 3}
+  gameplayCharacterPrefab: {fileID: 1478541544411096724, guid: 7a49c3c127d933b49b284e14390813b6, type: 3}

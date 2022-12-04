@@ -1,5 +1,4 @@
 using Mirror;
-using UnityEngine;
 
 public class MyNetworkManager : NetworkManager
 {
@@ -9,6 +8,10 @@ public class MyNetworkManager : NetworkManager
     public override void OnServerAddPlayer(NetworkConnection conn)
     {
         base.OnServerAddPlayer(conn);
+        //var connectedPlayer = conn.identity.GetComponent<MyNetworkPlayer>();
+        //connectedPlayer.SetDisplayName(GetInfo.nickname);
+        /*
+        connectedPlayer.SetDisplayName(MyNetworkPlayer.nickName);
         if (conn.identity.gameObject.GetComponent<MyNetworkPlayer>()!=null)
         {
             print("connection:" + conn);
@@ -18,8 +21,8 @@ public class MyNetworkManager : NetworkManager
         else
         {
             print("null");
-        }
-        
+        }*/
+
         //connectedPlayer.SetDisplayColor(new Color(Random.Range(0F,1F), Random.Range(0F,1F),Random.Range(0F,1F),1F));
 
         //connectedPlayer.SetDisplayName($"Player {numPlayers}");

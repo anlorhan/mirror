@@ -8,7 +8,7 @@ public class MyNetworkPlayer : NetworkBehaviour
     [SerializeField] 
     public string displayName = "MissingName";
 
-    public static string nickName=null;
+    //public string nickName=null;
 
     //[SyncVar(hook=nameof(HandleDisplayColor))]
     //[SerializeField]

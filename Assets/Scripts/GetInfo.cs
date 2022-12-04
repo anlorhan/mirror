@@ -11,7 +11,7 @@ public class GetInfo : NetworkBehaviour
     {
         nickname = nick.text;
         print(nickname);
-        MyNetworkPlayer.nickName=nick.text;
+        //MyNetworkPlayer.nickName=nick.text;
         SceneManager.LoadScene("Game");
     }
 }
