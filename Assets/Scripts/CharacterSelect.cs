@@ -69,7 +69,7 @@ using UnityEngine;
         NetworkServer.Spawn(characterInstance, sender);
         var connectedPlayer = characterInstance.GetComponent<MyNetworkPlayer>();
         //connectedPlayer.displayName = characterNick.text;
-        connectedPlayer.SetDisplayName(characterNick.text);
+        //connectedPlayer.SetDisplayName(characterNick.text);
         //connectedPlayer.displayName = characterNick.text;
 
     }

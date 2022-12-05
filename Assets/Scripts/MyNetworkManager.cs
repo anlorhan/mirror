@@ -2,11 +2,22 @@ using Mirror;
 
 public class MyNetworkManager : NetworkManager
 {
-    
+
     //public static int PickedSkinId;
     //public static SkinHolder skin;
+    NetworkManager manager;
+
+    /*
+    private void Awake()
+    {
+        manager = GetComponent<NetworkManager>();
+        manager.StartClient();
+        NetworkClient.Ready();
+    }
+    */
     public override void OnServerAddPlayer(NetworkConnection conn)
     {
+        
         base.OnServerAddPlayer(conn);
         //var connectedPlayer = conn.identity.GetComponent<MyNetworkPlayer>();
         //connectedPlayer.SetDisplayName(GetInfo.nickname);

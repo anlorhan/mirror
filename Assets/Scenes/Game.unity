@@ -3161,6 +3161,12 @@ MonoBehaviour:
   spawnPrefabs:
   - {fileID: 1478541544411096724, guid: 740c7d92a60d6e24f981b4e22ef84b11, type: 3}
   - {fileID: 1478541544411096724, guid: 6ca95481144009d49be7af2626a99ba1, type: 3}
+  - {fileID: 1478541544411096724, guid: 0861a874628aec347bd967d11343be65, type: 3}
+  - {fileID: 1478541544411096724, guid: 5bdfa239198afdb4c9d7843ab0d99216, type: 3}
+  - {fileID: 1478541544411096724, guid: e42352a7ac5f41b429cad0774334e5c8, type: 3}
+  - {fileID: 1478541544411096724, guid: ebbdf887222929a468e4229f8bcd73e8, type: 3}
+  - {fileID: 1478541544411096724, guid: eca2940f9ade2f641bf1c65b7b4c87e7, type: 3}
+  - {fileID: 1478541544411096724, guid: 7a49c3c127d933b49b284e14390813b6, type: 3}
 --- !u!114 &923024280
 MonoBehaviour:
   m_ObjectHideFlags: 0
